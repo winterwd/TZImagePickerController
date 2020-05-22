@@ -98,6 +98,10 @@
 /// Customizing UIImagePickerController's other properties, such as videoQuality / 定制UIImagePickerController的其它属性，比如视频拍摄质量videoQuality
 @property (nonatomic, copy) void(^uiImagePickerControllerSettingBlock)(UIImagePickerController *imagePickerController);
 
+/// Default is YES, if set NO, video player without slider.
+/// 默认为YES，如果设置为NO, 视频预览播放时不显示可拖拽进度条
+@property (nonatomic, assign) BOOL showVideoPlaySlider;
+
 /// 首选语言，如果设置了就用该语言，不设则取当前系统语言。
 /// 由于目前只支持中文、繁体中文、英文、越南语。故该属性只支持zh-Hans、zh-Hant、en、vi四种值，其余值无效。
 @property (copy, nonatomic) NSString *preferredLanguage;
